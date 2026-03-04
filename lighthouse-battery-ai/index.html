@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="AI-based monitoring system for solar-powered lighthouse battery systems.">
+  <meta name="keywords" content="LBMonAI, AtoNs">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>LBMonAI: Lighthouse Battery Monitoring with AI</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -63,18 +63,13 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
+          <a class="navbar-item" href="https://github.com/gla-rad/ml-lighthouse-times">
+            Lighthouse light sensor perfomance monitoring using ML.
           </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
+          <a class="navbar-item" href="https://rnavlab.gla-rad.org/wiki/Workshop_on_AI,_ML_and_GLA_Capabilities_-_December_2024">
+            GRAD
           </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
+          
         </div>
       </div>
     </div>
@@ -258,31 +253,36 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Lighthouses often rely on solar-powered battery systems to power light sensors and navigation equipment. 
+            These systems degrade over time due to:
+            <ul>
+              <li> battery aging, </li>
+              <li> temperature variation, </li>
+              <li> irregular solar radiation, and </li>
+              <li> charging cycles. </li>
+              <li> environmental conditions. </li>
+            </ul>
+             To ensure the reliability of these systems, we propose LBMonAI, an AI-based monitoring system that uses machine learning to analyze sensor data and detect faults in lighthouse battery systems. 
+             LBMonAI can predict battery performance, identify potential issues, and provide actionable insights for maintenance and optimization.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            Currently, battery health is monitored through manual inspections, which:
+            <ul>
+              <li> require physical visits, </li>
+              <li> increase maintenance costs, and </li>
+              <li> delay detection of battery failures. </li>
+            </ul>
+
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            The goal of this project is to develop an AI-based predictive monitoring system that analyzes:
+            <ul>
+              <li> battery performance data, </li>
+              <li> solar irradiance data, and </li>
+              <li> environmental conditions. </li>
+            </ul>
+              By leveraging machine learning algorithms, LBMonAI can provide real-time insights into battery health, predict potential failures, and optimize maintenance schedules, ultimately enhancing the reliability and efficiency of lighthouse operations.  
+
           </p>
         </div>
       </div>
@@ -361,9 +361,9 @@
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
+            <img src="./static/images/800px-NLBTelemetry1.jpg"
                  class="interpolation-image"
-                 alt="Interpolate start reference image."/>
+                 alt="Good telemetry - Senior Tech has no concerns over the winter"/>
             <p>Start Frame</p>
           </div>
           <div class="column interpolation-video-column">
@@ -375,9 +375,9 @@
                    step="1" min="0" max="100" value="0" type="range">
           </div>
           <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
+            <img src="./static/images/800px-NLBTelemetry2.jpg"
                  class="interpolation-image"
-                 alt="Interpolation end reference image."/>
+                 alt="Fair Isle North: Senior Tech has concerns over the winter"/>
             <p class="is-bold">End Frame</p>
           </div>
         </div>
@@ -444,11 +444,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{kampouridis2024using,
+  title={Using machine learning for fault detection in lighthouse light sensors},
+  author={Kampouridis, Michael and Vastardis, Nikolaos and Rayment, George},
+  journal={arXiv preprint arXiv:2409.05495},
+  year={2024}
 }</code></pre>
   </div>
 </section>
@@ -458,7 +458,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="###">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
